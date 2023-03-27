@@ -1,0 +1,1 @@
+The views folder contains all of your html pages.

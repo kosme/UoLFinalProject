@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="style">
+</head>
+
+<body>
+  <div id="episodeViewContainer" class="hidden container">
+    <button id="closeEpisodeViewBtn" class="closeButton">X</button>
+    <h2 id="dateInfoEpisode" class="centered"></h2>
+    <div id="episodeView"></div>
+  </div>
+  <div id="dayViewContainer" class="container">
+    <input type="date" id="dayPicker" name="dayPicker">
+    <h2 id="dateInfoDay" class="centered"></h2>
+    <div id="dayView"></div>
+  </div>
+  <script src="libs/flotr2.min.js"></script>
+  <script src="libs/moment.min.js"></script>
+  <script src="dayView.js"></script>
+  <script src="episodeView.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
