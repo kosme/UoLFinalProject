@@ -1,0 +1,5 @@
+server/dataAPI/__pycache__
+server/dataAPI/migrations
+server/pyServer/__pycache__
+*.sqlite*
+
