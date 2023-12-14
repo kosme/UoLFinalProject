@@ -1,0 +1,29 @@
+#episodeView,
+#dayView {
+  width: 600px;
+  height: 300px;
+}
+
+.hidden {
+  display: none;
+}
+
+.centered {
+  text-align: center;
+}
+
+.container {
+  width: fit-content;
+}
+
+.closeButton {
+  float: left;
+}
+
+#dayPicker {
+  float: right;
+}
+
+#patientSelector {
+  float: left;
+}

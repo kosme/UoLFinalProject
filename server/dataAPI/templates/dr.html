@@ -1,0 +1,30 @@
+{% extends "header.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<div id="episodeViewContainer" class="hidden container">
+  <button id="closeEpisodeViewBtn" class="closeButton">X</button>
+  <h2 id="dateInfoEpisode" class="centered"></h2>
+  <div id="episodeView"></div>
+</div>
+<div id="dayViewContainer" class="container">
+  <input type="date" id="dayPicker" name="dayPicker">
+  {%if patients %}
+  <select id="patientSelector">
+    {% for patient in patients %}
+    <option value="{{patient.user_id}}">{{patient}}</option>
+    {% endfor %}
+  </select>
+  {% endif %}
+  <h2 id="dateInfoDay" class="centered"></h2>
+  <div id="dayView"></div>
+</div>
+<script src={%static "js/libs/flotr2.min.js" %}></script>
+<script src={%static "js/libs/moment.min.js" %}></script>
+<script src={%static "js/dayView.js" %}></script>
+<script src={%static "js/episodeView.js" %}></script>
+<script src={%static "js/script.js" %}></script>
+
+{% endblock %}
